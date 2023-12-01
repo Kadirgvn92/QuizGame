@@ -3,6 +3,8 @@
 import Foundation
 
 struct QuizBrain {
+    
+
     let quiz = [
         Question(q: "Hangi gezegen Güneş Sistemi'ndeki en büyük gezegendir?",
             a: ["Mars", "Jüpiter", "Venüs"],

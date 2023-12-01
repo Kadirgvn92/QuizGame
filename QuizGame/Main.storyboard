@@ -20,21 +20,10 @@
                                 <rect key="frame" x="20" y="48" width="374" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaQ-GT-uDh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="104"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="94"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaQ-cS-WKD">
-                                                <rect key="frame" x="271" y="4" width="95" height="67"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" red="1" green="0.81568627449999997" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
-                                                    <backgroundConfiguration key="background" image="united-kingdom (1)" imageContentMode="scaleAspectFill"/>
-                                                    <attributedString key="attributedTitle"/>
-                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                                </buttonConfiguration>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-8u-i9b">
-                                                <rect key="frame" x="8" y="27" width="132" height="30"/>
+                                                <rect key="frame" x="10" y="27" width="61" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.16862745100000001" green="0.20392156859999999" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,7 +32,7 @@
                                         </subviews>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhQ-4A-qyN">
-                                        <rect key="frame" x="0.0" y="114" width="374" height="480"/>
+                                        <rect key="frame" x="0.0" y="104" width="374" height="480"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="480" id="dSI-5N-fGu"/>
@@ -53,7 +42,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxJ-dO-c1I">
-                                        <rect key="frame" x="0.0" y="604" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="594" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="s9y-Cf-okG"/>
                                         </constraints>
@@ -68,7 +57,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-gb-Sya">
-                                        <rect key="frame" x="0.0" y="674" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="664" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="TfO-Mv-LGj"/>
                                         </constraints>
@@ -83,7 +72,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEK-vI-QVl">
-                                        <rect key="frame" x="0.0" y="744" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="734" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Eir-MC-Jcg"/>
                                         </constraints>
@@ -99,8 +88,11 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="joN-Gd-hSh">
-                                        <rect key="frame" x="0.0" y="814" width="374" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="804" width="374" height="10"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="MYK-pw-lbB"/>
+                                        </constraints>
                                     </progressView>
                                 </subviews>
                                 <constraints>
@@ -120,9 +112,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnLang" destination="WaQ-cS-WKD" id="SBT-bM-bWB"/>
-                        <outlet property="lblQuestion" destination="BhQ-4A-qyN" id="GKF-Xa-eJ7"/>
-                        <outlet property="progressBar" destination="joN-Gd-hSh" id="dOD-Li-KGN"/>
+                        <outlet property="btnChoose1" destination="jxJ-dO-c1I" id="Aiw-mT-iEK"/>
+                        <outlet property="btnChoose2" destination="Md1-gb-Sya" id="ere-um-a7T"/>
+                        <outlet property="btnChoose3" destination="dEK-vI-QVl" id="dPi-Ug-l7o"/>
+                        <outlet property="lblQuestion" destination="BhQ-4A-qyN" id="DYE-Jg-VZZ"/>
+                        <outlet property="lblScore" destination="r5A-8u-i9b" id="AXV-Xo-Dfn"/>
+                        <outlet property="progressBar" destination="joN-Gd-hSh" id="12M-IQ-quH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOn-Xc-Lxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -131,7 +126,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="united-kingdom (1)" width="512" height="512"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

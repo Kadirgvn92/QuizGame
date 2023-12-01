@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ct9-AZ-Jff">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="faG-be-BUQ">
             <objects>
-                <viewController id="Ct9-AZ-Jff" customClass="ViewController" customModule="Quizzler_iOS15" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ct9-AZ-Jff" customClass="ViewController" customModule="QuizGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JgL-0W-d72">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +20,7 @@
                                 <rect key="frame" x="20" y="48" width="374" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaQ-GT-uDh">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="94"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="103.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaQ-cS-WKD">
                                                 <rect key="frame" x="271" y="4" width="95" height="67"/>
@@ -44,7 +43,7 @@
                                         </subviews>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhQ-4A-qyN">
-                                        <rect key="frame" x="0.0" y="104" width="374" height="480"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="374" height="480"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="480" id="dSI-5N-fGu"/>
@@ -54,7 +53,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxJ-dO-c1I">
-                                        <rect key="frame" x="0.0" y="594" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="603.5" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="s9y-Cf-okG"/>
                                         </constraints>
@@ -69,7 +68,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md1-gb-Sya">
-                                        <rect key="frame" x="0.0" y="664" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="673.5" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="TfO-Mv-LGj"/>
                                         </constraints>
@@ -84,7 +83,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEK-vI-QVl">
-                                        <rect key="frame" x="0.0" y="734" width="374" height="60"/>
+                                        <rect key="frame" x="0.0" y="743.5" width="374" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Eir-MC-Jcg"/>
                                         </constraints>
@@ -100,11 +99,8 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="joN-Gd-hSh">
-                                        <rect key="frame" x="0.0" y="804" width="374" height="10"/>
+                                        <rect key="frame" x="0.0" y="813.5" width="374" height="0.5"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="10" id="iJR-s1-lVt"/>
-                                        </constraints>
                                     </progressView>
                                 </subviews>
                                 <constraints>
@@ -139,9 +135,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="united-kingdom (1)" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="united-kingdom (1)" width="512" height="512"/>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

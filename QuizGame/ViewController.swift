@@ -5,10 +5,14 @@ import UIKit
 class ViewController: UIViewController {
     
     
-
+    @IBOutlet var lblScore: UILabel!
+    @IBOutlet var lblQuestion: UILabel!
+    @IBOutlet var btnChoose3: UIButton!
+    @IBOutlet var btnChoose2: UIButton!
+    @IBOutlet var btnChoose1: UIButton!
+    @IBOutlet var progressBar: UIProgressView!
     
     var quizBrain = QuizBrain()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,9 @@ class ViewController: UIViewController {
         Timer.scheduledTimer(timeInterval: 0.2, target: self,
         selector : #selector(updateUI), userInfo: nil, repeats: false)
     }
+    
+
+    
     
     @objc func updateUI(){
         if quizBrain.getMessage() {
@@ -76,6 +83,7 @@ class ViewController: UIViewController {
 
         present(alertController, animated: true, completion: nil)
     }
+    
     
     func designUI () {
         progressBar.progress = 0
