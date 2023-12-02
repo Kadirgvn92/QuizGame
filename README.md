@@ -1,5 +1,9 @@
 <p align="center"> <img src="main.jpg" /> </p>
 
+<hr/>
+
+<p align="center"> <img src="ss1.png" height="800px" width="400px"/>  <img src="ss2.png"height="800px" width="400px" /> </p>
+
 #  QuizGame
 
 ## My Goal
